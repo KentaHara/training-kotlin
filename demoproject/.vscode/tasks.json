@@ -5,12 +5,16 @@
       "label": "Project Build",
       "type": "shell",
       "command": "./gradlew build --project-dir ${workspaceFolder}",
-      "problemMatcher": []
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "Project Run",
       "type": "shell",
-      "command": "./gradlew run --project-dir ${workspaceFolder}",
+      "command": "./gradlew bootRun --project-dir ${workspaceFolder}",
       "problemMatcher": []
     }
   ]

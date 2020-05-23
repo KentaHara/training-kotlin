@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "kotlinc ${file} -include-runtime -d ${fileDirname}/${fileBasenameNoExtension}.jar"
+    },
+    {
+      "label": "Run",
+      "type": "shell",
+      "command": "kotlin ${fileDirname}/${fileBasenameNoExtension}.jar"
+    }
+  ]
+}

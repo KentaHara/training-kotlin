@@ -2,14 +2,19 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build",
+      "label": "Kotlin Simple Build",
       "type": "shell",
-      "command": "kotlinc ${file} -include-runtime -d ${fileDirname}/${fileBasenameNoExtension}.jar"
+      "command": "kotlinc ${file} -include-runtime -d ${fileDirname}/${fileBasenameNoExtension}.jar",
+      "problemMatcher": []
     },
     {
-      "label": "Run",
+      "label": "Kotlin Simple Run",
       "type": "shell",
-      "command": "kotlin ${fileDirname}/${fileBasenameNoExtension}.jar"
+      "command": "kotlin ${fileDirname}/${fileBasenameNoExtension}.jar",
+      "dependsOn": [
+        "Kotlin Simple Build"
+      ],
+      "problemMatcher": []
     }
   ]
 }

@@ -16,6 +16,12 @@
       "type": "shell",
       "command": "./gradlew bootRun --project-dir ${workspaceFolder}",
       "problemMatcher": []
+    },
+    {
+      "label": "Create Jar",
+      "type": "shell",
+      "command": "./gradlew bootJar --project-dir ${workspaceFolder}",
+      "problemMatcher": []
     }
   ]
 }

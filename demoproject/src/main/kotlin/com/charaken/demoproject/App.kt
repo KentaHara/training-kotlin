@@ -3,10 +3,12 @@
  */
 package com.charaken.demoproject
 
+import com.charaken.demoproject.foo.FooApp
+
 class App {
     val greeting: String
         get() {
-            return "Hello world."
+            return FooApp().greeting
         }
 }
 

@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Project Build",
+      "type": "shell",
+      "command": "./gradlew build --project-dir ${workspaceFolder}",
+      "problemMatcher": []
+    },
+    {
+      "label": "Project Run",
+      "type": "shell",
+      "command": "./gradlew run --project-dir ${workspaceFolder}",
+      "problemMatcher": []
+    }
+  ]
+}
